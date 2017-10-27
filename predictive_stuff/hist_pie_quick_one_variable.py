@@ -2,7 +2,6 @@ import pandas, numpy, math, json
 from matplotlib import pyplot
 import matplotlib.patches as mpatches
 from mpl_toolkits.mplot3d import Axes3D
-from lib.med_80 import Med_80
 import pylab, time
 from pandas import Series
 import numpy as np
@@ -68,7 +67,7 @@ if pie_plot:
     # everything is rotated counter-clockwise by 90 degrees,
     # so the plotting starts on the positive y-axis.
 
-    title('Distribution of Ditch Witch machines with avg op hrs per day', bbox={'facecolor': '0.8', 'pad': 5})
+    title('Distribution of train delays in minutes', bbox={'facecolor': '0.8', 'pad': 5})
 
     show()
 
@@ -78,8 +77,8 @@ if hist_plot:
 
     ########################### 2D bar histogram for all the models########################
     pyplot.hist(temp,bins=bins,histtype='bar',rwidth=0.4, label='Servicing Dates Diff Distribution', color='b')
-    pyplot.xlabel('operating hours changed in 10 days')
-    pyplot.ylabel('Number of machines')
-    pyplot.title('Histograms of machines with operating hours change in 10 days')
+    pyplot.xlabel('train delay in minutes')
+    pyplot.ylabel('Number of train trips')
+    pyplot.title('Distribution of train delays in last 15 days')
 
     pyplot.show()
