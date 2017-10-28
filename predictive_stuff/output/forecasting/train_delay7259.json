@@ -1,0 +1,1 @@
+[{"geometry": {"type": "Point", "coordinates": [9.319344000000001, 48.815540000000006]}, "type": "Feature", "properties": {"delay": 57.0, "name": "Train Delay"}}, {"geometry": {"type": "Point", "coordinates": [9.2998820000000002, 48.826124]}, "type": "Feature", "properties": {"delay": 56.0, "name": "Train Delay"}}]
