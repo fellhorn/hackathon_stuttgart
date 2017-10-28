@@ -50,7 +50,7 @@ for i in range(len(delay_minutes)):
 
 bins = np.arange(0, 1000, 1)
 
-pie_plot = 1
+pie_plot = 0
 if pie_plot:
     # make a square figure and axes
     figure(1, figsize=(12, 12))
@@ -72,7 +72,7 @@ if pie_plot:
     show()
 
 
-hist_plot = 0
+hist_plot = 1
 if hist_plot:
 
     ########################### 2D bar histogram for all the models########################

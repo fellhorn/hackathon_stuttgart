@@ -23,5 +23,5 @@ ZUGEREIGNIS_ZUGGATTUNG;ZUGEREIGNIS_ZUGNUMMER;ZUGEREIGNIS_DS100;ZUGEREIGNIS_TYP;Z
 		- min delay = 0
 		- max delay = 1144 mins
 		- avg delay = 1.09155 mins
-		- median of delay = 0 min
+		- median of delay = 0 min ()
 	- detailed histogram stored in the folder
