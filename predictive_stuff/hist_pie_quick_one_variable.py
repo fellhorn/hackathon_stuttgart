@@ -34,8 +34,6 @@ for i in range(len(delay)):
 print min(delay_minutes)
 print max(delay_minutes)
 
-
-
 print np.nanmean(delay_minutes)
 print np.nanmedian(delay_minutes)
 #print median(delay_minutes)
