@@ -6,13 +6,13 @@ Total 12 columns in the data, namely:
 ZUGEREIGNIS_ZUGGATTUNG;ZUGEREIGNIS_ZUGNUMMER;ZUGEREIGNIS_DS100;ZUGEREIGNIS_TYP;ZUGEREIGNIS_SOLLZEIT;ZUGEREIGNIS_ISTZEIT;QUELLE_SENDER;EINGANGSZEIT;SERVICE_ID;NAME;LAENGE;BREITE;geo
 
 ### ZUGEREIGNIS_ZUGNUMMER
-- Total 897 unique train number
+- Average 59 unique trains per day, with multiple trips
 	- we can use this param to cluster trains
 
 ### ZUGEREIGNIS_SOLLZEIT
 - Total 15 days of data
 	- starting from 1 sep 2017 to 15 sep 2017
-		- total 1247995 trip by the entire s-bahn fleet in stuttgart (including all kinds of trains and routes within the city)
+		- total 124799 trip by the entire s-bahn fleet in stuttgart (including all kinds of trains and routes within the city)
 
 ### ZUGEREIGNIS_ISTZEIT
 - same as above

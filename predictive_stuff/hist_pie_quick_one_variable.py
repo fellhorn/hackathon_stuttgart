@@ -27,7 +27,7 @@ for i in train_number_col:
 planned_time_col = db_data['ZUGEREIGNIS_SOLLZEIT']
 actual_time_col = db_data['ZUGEREIGNIS_ISTZEIT']
 
-using_list = 0
+using_list = 1
 if using_list:
 
     delay = actual_time_col - planned_time_col
@@ -61,10 +61,10 @@ if using_list:
         ax = axes([0.1, 0.1, 0.8, 0.8])
 
         # The slices will be ordered and plotted counter-clockwise.
-        labels = 'delay = 0 min', 'delay = 1 min', 'delay = 2 min', 'delay = 3 min','delay = 4 min','delay = 5 min'
+        labels = 'delay = 0 min', 'delay = 1 min', 'delay = 2 min', 'delay = 3 min','delay = 4 min','.','6-30 mins','delay = more than 30 mins'
         fracs = np.histogram(temp, bins=bins)
 
-        pie(fracs[0][0:6],
+        pie(fracs[0][0:8],
             autopct='%1.1f%%', labels= labels,startangle=90)
         # The default startangle is 0, which would start
         # the Frogs slice on the x-axis.  With startangle=90,
@@ -76,7 +76,7 @@ if using_list:
         show()
 
 
-    hist_plot = 1
+    hist_plot = 0
     if hist_plot:
 
         ########################### 2D bar histogram for all the models########################
@@ -98,7 +98,7 @@ if using_list:
     print 'total number of times big delays occurred per hour in stuttgart : ',len(big_delays) / (15*12)
 
 
-using_df = 1
+using_df = 0
 if using_df:
     db_data['delay'] = actual_time_col - planned_time_col
 
